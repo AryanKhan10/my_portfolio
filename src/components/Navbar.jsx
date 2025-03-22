@@ -150,7 +150,7 @@ function Navbar() {
               </button>
               <div className="flex justify-center gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/AryanKhan10"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${theme === 'dark'? 'bg-gray-800 hover:bg-gray-700': 'hover:bg-gray-200 bg-gray-100'} p-3 rounded-full  transition-colors duration-300`}
@@ -158,7 +158,7 @@ function Navbar() {
                   <Github className={`${theme==='dark'?'text-gray-200 ':'text-gray-700'} h-6 w-6  `} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/aryan-ahmad-khan-83b664266/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${theme === 'dark'? 'bg-gray-800 hover:bg-gray-700': 'hover:bg-gray-200 bg-gray-100'} p-3 rounded-full  transition-colors duration-300`}
