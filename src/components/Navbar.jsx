@@ -21,12 +21,6 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Toggle dark mode function
-  // const toggleDarkMode = () => {
-  //   setIsDarkMode(!isDarkMode)
-  //   // Toggle the 'dark' class on the document element
-  //   document.documentElement.classList.toggle("dark")
-  // }
 
   // Smooth scroll function
   const scrollToSection = (e, sectionId) => {
@@ -137,8 +131,8 @@ function Navbar() {
       </nav>
 
       {/* Hero Section */}
-      <div className={`pt-32 px-4 py-10 max-w-7xl mx-auto min-h-screen flex items-center`}>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className={`pt-32 px-4 py-10 max-w-7xl mx-auto min-h-screen flex items-center justify-center`}>
+        <div className="grid md:grid-cols-2 gap-12 items-center mx-w-[]">
           <div className="space-y-6 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
               <span className={`${theme === 'dark'? ' text-gray-400': 'text-gray-900'}`}>Aryan Ahmad </span>
@@ -174,7 +168,7 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative -left-3">
             <div className="relative z-10">
               <div className="w-full h-[500px] relative rounded-2xl shadow-2xl overflow-hidden">
               <img

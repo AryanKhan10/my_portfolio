@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
     return (
-      <div className="relative w-[24rem] group proj shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]">
-        <div className="w-[24rem] h-[16rem]">
+      <div className="relative w-[22rem] group proj shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]">
+        <div className="w-[22rem] h-[16rem]">
           <img src={project.image || "/placeholder.svg"} alt={project.title} className="object-cover w-full h-full rounded-lg" />
         </div>
   
