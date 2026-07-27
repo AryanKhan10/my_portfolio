@@ -1,1 +1,62 @@
 @import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  ::selection {
+    background-color: #00f0ff;
+    color: #0a0a0a;
+  }
+
+  body {
+    @apply antialiased overflow-x-hidden transition-colors duration-300;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Custom Utilities for Premium Glows and Glassmorphism */
+.glow-blue {
+  box-shadow: 0 0 25px -5px rgba(0, 240, 255, 0.3), 0 0 10px -5px rgba(0, 240, 255, 0.2);
+}
+
+.glow-blue-lg {
+  box-shadow: 0 0 50px -10px rgba(0, 240, 255, 0.4), 0 0 20px -10px rgba(0, 240, 255, 0.3);
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+}
+
+.glass-card {
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-hover {
+  transition: all 0.3s ease;
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 0 30px -10px rgba(0, 240, 255, 0.25);
+}
